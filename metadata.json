@@ -1,0 +1,6 @@
+{
+  "name": "Speaking Exam Dashboard",
+  "description": "An administrative dashboard for report room supervisors and examiners of the English Speaking Examination to manage student attendance, track sessions, record marks, and monitor prep timers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
