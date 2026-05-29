@@ -626,23 +626,23 @@ export default function App() {
 
   // Design tokens based on Dark/Light Theme values
   const css = {
-    canvas: darkMode ? 'bg-[#09090b] text-[#f4f4f5]' : 'bg-[#f8fafc] text-[#0f172a]',
-    sidebar: darkMode ? 'bg-[#09090b] border-r border-[#1f1f23]' : 'bg-white border-r border-[#e2e8f0]',
-    card: darkMode ? 'bg-[#141416]/90 border border-[#1f1f23] rounded-3xl shadow-xl' : 'bg-white border border-[#e2e8f0] rounded-3xl shadow-sm',
-    badgeSecondary: darkMode ? 'bg-[#1f1f23] text-[#a1a1aa] border border-[#27272a]' : 'bg-slate-100 text-slate-600 border border-slate-200',
+    canvas: darkMode ? 'bg-[#121214] text-[#f4f4f5]' : 'bg-[#f8fafc] text-[#0f172a]',
+    sidebar: darkMode ? 'bg-[#18181b] border-r border-[#232327]' : 'bg-white border-r border-[#e2e8f0]',
+    card: darkMode ? 'bg-[#1e1e22] border border-[#2d2d32] rounded-3xl shadow-xl' : 'bg-white border border-[#e2e8f0] rounded-3xl shadow-sm',
+    badgeSecondary: darkMode ? 'bg-[#2a2a2f] text-[#a1a1aa] border border-[#38383e]' : 'bg-slate-100 text-slate-600 border border-slate-200',
     title: darkMode ? 'text-white' : 'text-slate-900',
     subtitle: darkMode ? 'text-[#a1a1aa]' : 'text-slate-500',
-    input: darkMode ? 'bg-[#1f1f23] border-[#27272a] text-white focus:ring-blue-500focus:border-blue-500' : 'bg-slate-50 border-slate-200 text-slate-900 focus:ring-blue-600 focus:border-blue-600',
-    trHover: darkMode ? 'hover:bg-[#18181b]/50' : 'hover:bg-slate-50',
-    border: darkMode ? 'border-[#1f1f23]' : 'border-slate-100',
-    buttonOutline: darkMode ? 'bg-[#1f1f23] border-[#27272a] text-[#f4f4f5] hover:bg-[#27272a]' : 'bg-white border-[#cbd5e1] text-slate-700 hover:bg-slate-50',
+    input: darkMode ? 'bg-[#2a2a2f] border-[#38383e] text-white focus:ring-blue-500 focus:border-blue-500' : 'bg-slate-50 border-slate-200 text-slate-900 focus:ring-blue-600 focus:border-blue-600',
+    trHover: darkMode ? 'hover:bg-[#2a2a2f]/50' : 'hover:bg-slate-50',
+    border: darkMode ? 'border-[#232327]' : 'border-slate-100',
+    buttonOutline: darkMode ? 'bg-[#2a2a2f] border-[#38383e] text-[#f4f4f5] hover:bg-[#38383e]' : 'bg-white border-[#cbd5e1] text-slate-700 hover:bg-slate-50',
   };
 
   return (
     <div className={`min-h-screen flex flex-col font-sans transition-colors duration-300 ${css.canvas}`}>
       
       {/* Top Mobile Bar */}
-      <div className={`lg:hidden flex items-center justify-between p-4 border-b ${css.border} ${darkMode ? 'bg-[#09090b]' : 'bg-white'}`}>
+      <div className={`lg:hidden flex items-center justify-between p-4 border-b ${css.border} ${darkMode ? 'bg-[#18181b]' : 'bg-white'}`}>
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
             <span className="font-bold text-white text-xs">F4</span>
@@ -688,7 +688,7 @@ export default function App() {
               <span className="font-extrabold text-[#f4f4f5] text-sm">F4</span>
             </div>
             <div>
-              <span className="font-bold text-base tracking-tight block">Form 4A-K Exam</span>
+              <span className="font-bold text-base tracking-tight block">2526 F.4 Final Speaking Exam</span>
               <span className="text-[10px] text-blue-500 font-semibold tracking-widest uppercase">Speaking Board</span>
             </div>
           </div>
@@ -846,7 +846,7 @@ export default function App() {
                 <button
                   onClick={() => setDarkMode(true)}
                   className={`px-3 py-1.5 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition-all ${
-                    darkMode ? 'bg-[#1f1f23] text-blue-400 shadow' : 'text-zinc-500 hover:text-white'
+                    darkMode ? 'bg-[#2a2a2f] text-blue-400 shadow' : 'text-zinc-500 hover:text-white'
                   }`}
                 >
                   <Moon className="w-3.5 h-3.5" /> Dark
