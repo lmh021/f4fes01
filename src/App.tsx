@@ -2481,6 +2481,22 @@ export default function App() {
                         <span className="text-xs font-mono font-bold text-blue-500">10:00</span>
                       </button>
 
+                      {/* 8 Minutes preset option */}
+                      <button
+                        onClick={() => applyPresetTime(480, '8 Mins Prep Option')}
+                        className={`w-full p-4 rounded-2xl border text-left flex items-center justify-between transition-all ${
+                          stopwatchMode === 'countdown' && timeRemaining === 480
+                          ? 'bg-blue-600/5 border-blue-500/40'
+                          : 'bg-zinc-900/40 border-zinc-805 hover:bg-zinc-850'
+                        }`}
+                      >
+                        <div>
+                          <p className="text-xs font-bold text-zinc-50">8 Minutes Speaking Slot / Prep Option</p>
+                          <p className="text-[10px] text-zinc-500 mt-1">Custom timing preset option for rapid preparation/exam rounds.</p>
+                        </div>
+                        <span className="text-xs font-mono font-bold text-blue-500">08:00</span>
+                      </button>
+
                       {/* Group Discussion duration of exam preset */}
                       <button
                         onClick={() => applyPresetTime(900, '15 Mins Speaking Examination Slot')}
