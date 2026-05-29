@@ -26,6 +26,7 @@ import {
   Printer,
   ChevronDown
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { Student, AttendanceStatus, StudentMarks, HistoryAction, ExamSessionInfo } from './types';
 import { getInitialStudents, EXAM_SESSIONS } from './studentsData';
 
@@ -2546,6 +2547,7 @@ export default function App() {
 
       </div>
       
+      <Analytics />
     </div>
   );
 }
